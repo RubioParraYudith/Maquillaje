@@ -171,7 +171,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Clase\utilities.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PrincipalController.cs" />
@@ -187,6 +186,10 @@
     <Compile Include="Migrations\202006010901002_FirstMigration.cs" />
     <Compile Include="Migrations\202006010901002_FirstMigration.Designer.cs">
       <DependentUpon>202006010901002_FirstMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006012326269_UpdateModels.cs" />
+    <Compile Include="Migrations\202006012326269_UpdateModels.Designer.cs">
+      <DependentUpon>202006012326269_UpdateModels.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -370,6 +373,10 @@
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Clients\Create.cshtml" />
+    <Content Include="Views\Clients\Delete.cshtml" />
+    <Content Include="Views\Clients\Details.cshtml" />
+    <Content Include="Views\Clients\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -397,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006010901002_FirstMigration.resx">
       <DependentUpon>202006010901002_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006012326269_UpdateModels.resx">
+      <DependentUpon>202006012326269_UpdateModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

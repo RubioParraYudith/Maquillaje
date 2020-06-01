@@ -14,6 +14,7 @@ namespace Maquillaje.Web.Models
     {
         internal string hpb;
 
+
         [Display(Name = "Nombre")]
         [MaxLength(50)]
         public string FirstName { get; set; }
@@ -53,8 +54,6 @@ namespace Maquillaje.Web.Models
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Manager> Managers { get; set; }
-
-
 
     }
 }
