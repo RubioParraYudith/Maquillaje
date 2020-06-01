@@ -12,8 +12,6 @@ namespace Maquillaje.Web.Models
     public class ApplicationUser : IdentityUser
 
     {
-        internal string hpb;
-
 
         [Display(Name = "Nombre")]
         [MaxLength(50)]
