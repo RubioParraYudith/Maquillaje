@@ -1,5 +1,7 @@
-﻿using System.Data.Entity;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Security.Claims;
+using System.Security.Policy;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -8,7 +10,24 @@ namespace Maquillaje.Web.Models
 {
     // Para agregar datos de perfil del usuario, agregue más propiedades a su clase ApplicationUser. Visite https://go.microsoft.com/fwlink/?LinkID=317594 para obtener más información.
     public class ApplicationUser : IdentityUser
+
     {
+        internal string hpb;
+
+        [Display(Name = "Nombre")]
+        [MaxLength(50)]
+        public string FirstName { get; set; }
+        [Display(Name = "Apellido")]
+        [MaxLength(50)]
+
+        public string LastName { get; set; }
+        [Display(Name = "Dirección")]
+        [MaxLength(400)]
+
+        public string Address { get; set; }
+        [Display(Name = "Picture")]
+
+        public string imgurl { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Tenga en cuenta que el valor de authenticationType debe coincidir con el definido en CookieAuthenticationOptions.AuthenticationType
@@ -21,7 +40,7 @@ namespace Maquillaje.Web.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("MaquiConnection", throwIfV1Schema: false)
         {
         }
 
@@ -29,5 +48,13 @@ namespace Maquillaje.Web.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Manager> Managers { get; set; }
+
+
+
     }
 }
