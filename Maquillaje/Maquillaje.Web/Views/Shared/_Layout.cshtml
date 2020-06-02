@@ -12,67 +12,138 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-light bg-danger">
-        <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">Maquillaje</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="@Url.Action("Index", "Principal")">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="@Url.Action("About", "Home")">Acerca</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="@Url.Action("Contact", "Home")">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="@Url.Action("Index", "Manage")">Cambiar Password</a>
-                </li>
-                @if (User.IsInRole("Admin"))
-                {
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="@Url.Action("Index", "Users")">Usuarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="@Url.Action("Index", "Products")">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="@Url.Action("Index", "Suppliers")">Proveedores</a>
-                    </li>
-                }
+        <div class="container">
+            <div class="row ">
+                <img src="~/Content/img/logo.png" class="img-fluid rounded mx-auto d-block">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <ul class="navbar-nav mr-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="@Url.Action("Index", "Principal")">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MAQUILLAJE PARA OJOS
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Cejas</a>
+                                <a class="dropdown-item" href="#">Delineador de Ojos</a>
+                                <a class="dropdown-item" href="#">Mascara de Pestañas</a>
+                                <a class="dropdown-item" href="#">Sombra de Ojos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MAQUILLAJE PARA LABIOS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Bálsamo labial</a>
+                                <a class="dropdown-item" href="#">Brillo labial</a>
+                                <a class="dropdown-item" href="#">Delineador labial</a>
+                                <a class="dropdown-item" href="#">Labiales</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MAQUILLAJE PARA ROSTRO
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Base</a>
+                                <a class="dropdown-item" href="#">Contorno</a>
+                                <a class="dropdown-item" href="#">Corrector</a>
+                                <a class="dropdown-item" href="#">Polvo</a>
+                                <a class="dropdown-item" href="#">Prebase</a>
+                                <a class="dropdown-item" href="#">Rubor y Bronceador</a>
+                                <a class="dropdown-item" href="#">Iluminadores</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">MASCARILLAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">MÁS...</a>
+                        </li>
 
 
-                @if (User.IsInRole("Client"))
-                {
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="@Url.Action("Index","Client")">Mi Perfil</a>
-                    </li>
-
-                }
-
-            </ul>
 
 
-            <span class="navbar-text">
-                @Html.Partial("_LoginPartial")
-            </span>
 
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Users")">USUARIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Products")">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Suppliers")">PROVEEDORES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
+                            </li>
+
+
+                        }
+
+
+                        @if (User.IsInRole("Client"))
+                        {
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index","Client")">MAQUILLAJE VIRTUAL</a>
+                            </li>
+                            <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
+
+                        }
+
+                    </ul>
+                </div>
+            </div>
         </div>
+
     </nav>
     @RenderBody()
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 bg-primary" id="mainNav">
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-body" href="@Url.Action("Contact", "Home")">CONTACTO</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-body" href="@Url.Action("About", "Home")">NOSOTROS</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-body" href="#">CONSEJOS</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
 
     <div class="bg-danger">
         <section class="copyright bg-danger py-2 text-center text-white ">
-            <p class="text-center"> Copyright&copy; @DateTime.Now.Year -Maquillaje- Proyecto Final 2020
-            
-                <a  class="float-right" href="https://www.facebook.com"><img src="~/Content/img/f.png" alt="facebook" width="30" height="30"></a>
+            <p class="text-center">
+                Copyright&copy; @DateTime.Now.Year -Maquillaje- Proyecto Final 2020
+
+                <a class="float-right" href="https://www.facebook.com"><img src="~/Content/img/f.png" alt="facebook" width="30" height="30"></a>
                 <a class="float-right" href="https://www.twitter.com"><img src="~/Content/img/t.png" alt="twitter" width="30" height="30"></a>
                 <a class="float-right" href="https://www.web.whatsapp.com"><img src="~/Content/img/w.png" alt="whatsapp" width="30" height="30"></a>
                 <a class="float-right" href="https://www.whatsapp.com"><img src="~/Content/img/i.png" alt="instagram" width="30" height="30"></a>
-           </p>
+            </p>
         </section>
     </div>
 
