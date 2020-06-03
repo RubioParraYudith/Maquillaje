@@ -173,7 +173,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MaquillajeLabiosController.cs" />
     <Compile Include="Controllers\MaquillajeOjosController.cs" />
+    <Compile Include="Controllers\MaquillajeRostroController.cs" />
     <Compile Include="Controllers\PrincipalController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
@@ -210,6 +212,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\2Brochas.jpg" />
     <Content Include="Content\img\agua.jpg" />
     <Content Include="Content\img\arrugas.jpg" />
     <Content Include="Content\img\basclinique.jpg" />
@@ -236,12 +239,24 @@
     <Content Include="Content\img\img.jpeg" />
     <Content Include="Content\img\infalibre.jpg" />
     <Content Include="Content\img\InicioChicaMaquillada.jpg" />
+    <Content Include="Content\img\labiales.jpg" />
     <Content Include="Content\img\labnyx.jpg" />
     <Content Include="Content\img\lavar.jpg" />
     <Content Include="Content\img\lavbrochas..jpg" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\mac.jpg" />
     <Content Include="Content\img\makeup.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\BABY LIPS® MOISTURIZING LIP BALM.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\COLOR SENSATINAL SMOKED ROSES.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\COLOR SENSATIONAL® THE LOADED BOLDS LIPSTICK.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\CS MATTE METAL COUNTDOWN.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\electric shine.png" />
+    <Content Include="Content\img\MaquillajeLabiales\glitter lip fix.png" />
+    <Content Include="Content\img\MaquillajeLabiales\Labial Mate Superstay.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\MATTE METALLICS LIPSTICK.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\METALLIC FOIL.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\SUPERSTAY 24® LIQUID LIPSTICK.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\SUPERSTAY MATTE INK CITY.jpg" />
     <Content Include="Content\img\mascarilla.jpg" />
     <Content Include="Content\img\MX-maquillaje-arte-725x375.jpg" />
     <Content Include="Content\img\pepino.jpg" />
@@ -426,6 +441,8 @@
     <Content Include="Views\Clients\Edit.cshtml" />
     <Content Include="Views\Home\Consejos.cshtml" />
     <Content Include="Views\MaquillajeOjos\Index.cshtml" />
+    <Content Include="Views\MaquillajeLabios\Index.cshtml" />
+    <Content Include="Views\MaquillajeRostro\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
