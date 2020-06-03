@@ -173,6 +173,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MaquillajeOjosController.cs" />
     <Compile Include="Controllers\PrincipalController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
@@ -234,6 +235,7 @@
     <Content Include="Content\img\icono.png" />
     <Content Include="Content\img\img.jpeg" />
     <Content Include="Content\img\infalibre.jpg" />
+    <Content Include="Content\img\InicioChicaMaquillada.jpg" />
     <Content Include="Content\img\labnyx.jpg" />
     <Content Include="Content\img\lavar.jpg" />
     <Content Include="Content\img\lavbrochas..jpg" />
@@ -423,6 +425,7 @@
     <Content Include="Views\Clients\Details.cshtml" />
     <Content Include="Views\Clients\Edit.cshtml" />
     <Content Include="Views\Home\Consejos.cshtml" />
+    <Content Include="Views\MaquillajeOjos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,98 +11,87 @@
 
 </head>
 <body>
-  
-                <div class="collapse navbar-collapse " id="navbarText">
-                    <ul class="navbar-nav mr-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="@Url.Action("Index", "Principal")">INICIO</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MAQUILLAJE PARA OJOS
-                            </a>
-                            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Cejas</a>
-                                <a class="dropdown-item" href="#">Delineador de Ojos</a>
-                                <a class="dropdown-item" href="#">Mascara de Pestañas</a>
-                                <a class="dropdown-item" href="#">Sombra de Ojos</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MAQUILLAJE PARA LABIOS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Bálsamo labial</a>
-                                <a class="dropdown-item" href="#">Brillo labial</a>
-                                <a class="dropdown-item" href="#">Delineador labial</a>
-                                <a class="dropdown-item" href="#">Labiales</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MAQUILLAJE PARA ROSTRO
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Base</a>
-                                <a class="dropdown-item" href="#">Contorno</a>
-                                <a class="dropdown-item" href="#">Corrector</a>
-                                <a class="dropdown-item" href="#">Polvo</a>
-                                <a class="dropdown-item" href="#">Prebase</a>
-                                <a class="dropdown-item" href="#">Rubor y Bronceador</a>
-                                <a class="dropdown-item" href="#">Iluminadores</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">MASCARILLAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">MÁS...</a>
-                        </li>
 
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        </ol>
 
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Content/img/viento.jpg" class="d-block w-100" alt="..." height="400" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="text-left text-black-50 shadow">
+                        Tu rostro es la primer impresión que das de ti. ¡Luce radiante en todo momento!
+                    </h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/img/lavar.jpg" class="d-block w-100" alt="..." height="400" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="float-right text-black-50 shadow">¡LAVA TU ROSTRO DOS VECES AL DÍA!</h2>
+                    <h4 class="float-right text-black-50 shadow">Para que tu rostro esté radiante siempre, necesitas eliminar todo aquello que impida su libre respiración como el maquillaje, el polvo y la contaminación. Nunca te vayas a acostar sin limpiar tu cara. Si duermes con el maquillaje tu piel absorberá toda impureza. Usa Visible Difference Cleansers de Elizabeth Arden para lograr una limpieza perfecta.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/img/exfolia.jpg" class="d-block w-100" alt="..." height="400" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="shadow">¡ELIMINA CELULAS MUERTAS!</h3>
+                    <h5 class="shadow ">
+                        Debes exfoliar tu cara por lo menos una vez por semana, con productos naturales o con alguna marca en especial. Restriéga tu rostro con 3 cucharadas de azúcar morena, dejará tu tez más tersa que nunca o prueba con un gel exfoliante especial para tu tipo de piel como el Exfoliance Clarté de Lancome, que además aclara la piel.
+                    </h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/img/arrugas.jpg" class="d-block w-100" alt="..." height="400" width="100%">
+                <div class="carousel-caption d-none d-md-block">
 
+                    <h4 class="shadow float-left">
+                        La mejor opción para prevenir las líneas de expresión es <br /> aplicar una crema para regenerar la piel del rostro.
+                    </h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/img/crema.jpg" class="d-block w-100" alt="..." height="400" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="row text-black float-right">¡NO OLIVDES USAR PROTECTOR SOLAR!</h4>
 
-
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index", "Users")">USUARIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index", "Products")">PRODUCTOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index", "Suppliers")">PROVEEDORES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
-                            </li>
-
-
-                        }
-
-
-                        @if (User.IsInRole("Client"))
-                        {
-                            <li class="nav-item">
-                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index","Client")">MAQUILLAJE VIRTUAL</a>
-                            </li>
-                            <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
-
-                        }
-
-                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/img/agua.jpg" class="d-block w-100" alt="..." height="400" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                    <div>
+                        <h4 class="shadow">¡HIDRÁTATE!</h4>
+                    </div><br />
+                    <div>
+                        <h5 class="shadow dropdown float-left">
+                            Toma por lo menos 2lts. de agua al día para mantener tu rostro hidratado.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/img/pepino.jpg" class="d-block w-100" alt="..." height="400" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="text-black-50">¡EXFOLIA TU ROSTRO!</h3>
+                    <h5 class="text-black-50">
+                        Refresca y exfolia tu piel limpiando con un buen tónico. Este procedimiento es esencial para despojar las impurezas del rostro después de lavarlo. Ayuda a combatir las afecciones del medio ambiente y a dejar tu rostro impecable.
+                    </h5>
                 </div>
             </div>
         </div>
 
-    </nav>
-   </body>
+
+
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previa</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+</body>
 </html>

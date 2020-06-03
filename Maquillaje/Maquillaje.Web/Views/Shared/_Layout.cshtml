@@ -11,128 +11,126 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-danger">
-        <div class="container">
-            <div class="row ">
-                <img src="~/Content/img/logo.png" class="img-fluid rounded mx-auto d-block">
+        <nav class="navbar navbar-expand-lg bg-danger text-uppercase fixed-top">
+            <div class="container">
+                <div class="row ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                 
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarText">
-                    <ul class="navbar-nav mr-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="@Url.Action("Index", "Principal")">INICIO</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MAQUILLAJE PARA OJOS
-                            </a>
-                            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Cejas</a>
-                                <a class="dropdown-item" href="#">Delineador de Ojos</a>
-                                <a class="dropdown-item" href="#">Mascara de Pestañas</a>
-                                <a class="dropdown-item" href="#">Sombra de Ojos</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MAQUILLAJE PARA LABIOS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Bálsamo labial</a>
-                                <a class="dropdown-item" href="#">Brillo labial</a>
-                                <a class="dropdown-item" href="#">Delineador labial</a>
-                                <a class="dropdown-item" href="#">Labiales</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MAQUILLAJE PARA ROSTRO
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Base</a>
-                                <a class="dropdown-item" href="#">Contorno</a>
-                                <a class="dropdown-item" href="#">Corrector</a>
-                                <a class="dropdown-item" href="#">Polvo</a>
-                                <a class="dropdown-item" href="#">Prebase</a>
-                                <a class="dropdown-item" href="#">Rubor y Bronceador</a>
-                                <a class="dropdown-item" href="#">Iluminadores</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">MASCARILLAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">MÁS...</a>
-                        </li>
-
-
-
-
-
-                        @if (User.IsInRole("Admin"))
-                        {
+                    <div class="collapse navbar-collapse navbar-center " id="navbarText">
+                        <ul class="navbar-nav mr-auto ">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index", "Users")">USUARIOS</a>
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Principal")">INICIO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="@Url.Action("Index","MaquillajeOjos")" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    MAQUILLAJE PARA OJOS
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Cejas</a>
+                                    <a class="dropdown-item" href="#">Delineador de Ojos</a>
+                                    <a class="dropdown-item" href="#">Mascara de Pestañas</a>
+                                    <a class="dropdown-item" href="#">Sombra de Ojos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    MAQUILLAJE PARA LABIOS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Bálsamo labial</a>
+                                    <a class="dropdown-item" href="#">Brillo labial</a>
+                                    <a class="dropdown-item" href="#">Delineador labial</a>
+                                    <a class="dropdown-item" href="#">Labiales</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    MAQUILLAJE PARA ROSTRO
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Base</a>
+                                    <a class="dropdown-item" href="#">Contorno</a>
+                                    <a class="dropdown-item" href="#">Corrector</a>
+                                    <a class="dropdown-item" href="#">Polvo</a>
+                                    <a class="dropdown-item" href="#">Prebase</a>
+                                    <a class="dropdown-item" href="#">Rubor y Bronceador</a>
+                                    <a class="dropdown-item" href="#">Iluminadores</a>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index", "Products")">PRODUCTOS</a>
+                                <a class="nav-link text-white" href="#">MASCARILLAS</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index", "Suppliers")">PROVEEDORES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
-                            </li>
+                                @Html.Partial("_LoginPartial")
+            
 
 
-                        }
 
 
-                        @if (User.IsInRole("Client"))
-                        {
-                            <li class="nav-item">
-                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="@Url.Action("Index","Client")">MAQUILLAJE VIRTUAL</a>
-                            </li>
-                            <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
-
-                        }
-
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </nav>
-    @RenderBody()
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 bg-dark" id="mainNav">
+        </nav>
+        @RenderBody()
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 bg-dark" id="mainNav">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-white" href="@Url.Action("Contact", "Home")">CONTACTO</a>
-                </li>
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-white" href="@Url.Action("About", "Home")">NOSOTROS</a>
-                </li>
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-white" href="@Url.Action("Consejos","Home")">CONSEJOS</a>
-                </li>
-            </ul>
-        </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-white" href="@Url.Action("Contact", "Home")">CONTACTO</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-white" href="@Url.Action("About", "Home")">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-white" href="@Url.Action("Consejos","Home")">CONSEJOS</a>
+                    </li>
 
-    </nav>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link text-body" href="@Url.Action("Index", "Users")">USUARIOS</a>
+                                <a class="nav-link text-body" href="@Url.Action("Index", "Products")">PRODUCTOS</a>
+                                <a class="nav-link text-body" href="@Url.Action("Index", "Suppliers")">PROVEEDORES</a>
+                                <a class="nav-link text-body" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
+                                <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
+                            </div>
+                        </li>
+                    }
 
+
+                    @if (User.IsInRole("Client"))
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link text-body" href="@Url.Action("Index","Home")">INICIO</a>
+                                <a class="nav-link text-body" href="@Url.Action("Edit","Clients")">USUARIO</a>
+                                <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
+                            </div>
+                        </li>
+
+                    }
+                </ul>
+
+            </div>
+
+        </nav>
+
+ 
 
     <div class="bg-danger">
         <section class="copyright bg-danger py-2 text-center text-white ">
