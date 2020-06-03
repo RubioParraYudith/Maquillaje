@@ -26,5 +26,9 @@ namespace Maquillaje.Web.Controllers
 
             return View();
         }
+        public ActionResult Consejos()
+        {
+        return View();
+        }
     }
 }

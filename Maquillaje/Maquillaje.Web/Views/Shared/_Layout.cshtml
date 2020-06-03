@@ -112,7 +112,7 @@
 
     </nav>
     @RenderBody()
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 bg-primary" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 bg-dark" id="mainNav">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -120,23 +120,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item px-lg-4">
-                    <a class="nav-link text-body" href="@Url.Action("Contact", "Home")">CONTACTO</a>
+                    <a class="nav-link text-white" href="@Url.Action("Contact", "Home")">CONTACTO</a>
                 </li>
                 <li class="nav-item px-lg-4">
-                    <a class="nav-link text-body" href="@Url.Action("About", "Home")">NOSOTROS</a>
+                    <a class="nav-link text-white" href="@Url.Action("About", "Home")">NOSOTROS</a>
                 </li>
                 <li class="nav-item px-lg-4">
-                    <a class="nav-link text-body" href="#">CONSEJOS</a>
+                    <a class="nav-link text-white" href="@Url.Action("Consejos","Home")">CONSEJOS</a>
                 </li>
             </ul>
-
         </div>
 
     </nav>
 
+
     <div class="bg-danger">
         <section class="copyright bg-danger py-2 text-center text-white ">
-            <p class="text-center">
+            <p class="text-center mb-5">
                 Copyright&copy; @DateTime.Now.Year -Maquillaje- Proyecto Final 2020
 
                 <a class="float-right" href="https://www.facebook.com"><img src="~/Content/img/f.png" alt="facebook" width="30" height="30"></a>

@@ -209,6 +209,8 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\agua.jpg" />
+    <Content Include="Content\img\arrugas.jpg" />
     <Content Include="Content\img\basclinique.jpg" />
     <Content Include="Content\img\base forever.jpg" />
     <Content Include="Content\img\baseclinique.jpg" />
@@ -222,18 +224,25 @@
     <Content Include="Content\img\chanel.jpg" />
     <Content Include="Content\img\clinique.jpg" />
     <Content Include="Content\img\correctormac.jpg" />
+    <Content Include="Content\img\crema.jpg" />
+    <Content Include="Content\img\exfolia.jpg" />
     <Content Include="Content\img\f.png" />
     <Content Include="Content\img\flores.jpg" />
+    <Content Include="Content\img\frutas.jpg" />
     <Content Include="Content\img\i.png" />
     <Content Include="Content\img\icono.jpg" />
     <Content Include="Content\img\icono.png" />
     <Content Include="Content\img\img.jpeg" />
     <Content Include="Content\img\infalibre.jpg" />
     <Content Include="Content\img\labnyx.jpg" />
+    <Content Include="Content\img\lavar.jpg" />
+    <Content Include="Content\img\lavbrochas..jpg" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\mac.jpg" />
     <Content Include="Content\img\makeup.jpg" />
+    <Content Include="Content\img\mascarilla.jpg" />
     <Content Include="Content\img\MX-maquillaje-arte-725x375.jpg" />
+    <Content Include="Content\img\pepino.jpg" />
     <Content Include="Content\img\pestaña.png" />
     <Content Include="Content\img\polvoclinique.jpg" />
     <Content Include="Content\img\polvoloreal.jpg" />
@@ -243,6 +252,7 @@
     <Content Include="Content\img\rosa.jpg" />
     <Content Include="Content\img\t.jpeg" />
     <Content Include="Content\img\t.png" />
+    <Content Include="Content\img\viento.jpg" />
     <Content Include="Content\img\w.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -412,6 +422,7 @@
     <Content Include="Views\Clients\Delete.cshtml" />
     <Content Include="Views\Clients\Details.cshtml" />
     <Content Include="Views\Clients\Edit.cshtml" />
+    <Content Include="Views\Home\Consejos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

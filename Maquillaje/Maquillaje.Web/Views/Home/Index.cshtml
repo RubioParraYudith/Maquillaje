@@ -1,28 +1,108 @@
-﻿
-<div class="jumbotron">
-    <h1>MAQUILLAJE<i class="fas fa-store"></i></h1>
-    <p class="lead"></p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/Content/img/icono.png" />
+    <title>@ViewBag.Title MAKE UP</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>MAQUI</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</head>
+<body>
+  
+                <div class="collapse navbar-collapse " id="navbarText">
+                    <ul class="navbar-nav mr-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="@Url.Action("Index", "Principal")">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MAQUILLAJE PARA OJOS
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Cejas</a>
+                                <a class="dropdown-item" href="#">Delineador de Ojos</a>
+                                <a class="dropdown-item" href="#">Mascara de Pestañas</a>
+                                <a class="dropdown-item" href="#">Sombra de Ojos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MAQUILLAJE PARA LABIOS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Bálsamo labial</a>
+                                <a class="dropdown-item" href="#">Brillo labial</a>
+                                <a class="dropdown-item" href="#">Delineador labial</a>
+                                <a class="dropdown-item" href="#">Labiales</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MAQUILLAJE PARA ROSTRO
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Base</a>
+                                <a class="dropdown-item" href="#">Contorno</a>
+                                <a class="dropdown-item" href="#">Corrector</a>
+                                <a class="dropdown-item" href="#">Polvo</a>
+                                <a class="dropdown-item" href="#">Prebase</a>
+                                <a class="dropdown-item" href="#">Rubor y Bronceador</a>
+                                <a class="dropdown-item" href="#">Iluminadores</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">MASCARILLAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">MÁS...</a>
+                        </li>
+
+
+
+
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Users")">USUARIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Products")">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index", "Suppliers")">PROVEEDORES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
+                            </li>
+
+
+                        }
+
+
+                        @if (User.IsInRole("Client"))
+                        {
+                            <li class="nav-item">
+                                <a class="navbar-brand text-white" href="@Url.Action("Index","Home")">MAQUILLAJE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="@Url.Action("Index","Client")">MAQUILLAJE VIRTUAL</a>
+                            </li>
+                            <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
+
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+   </body>
+</html>
