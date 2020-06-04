@@ -2,470 +2,471 @@
 @{
     ViewBag.Title = "Index";
 }
-<img src="~/Content/img/2Brochas.jpg" width="100%" height="300" />
-
-<h2 class="text-center">MAQUILLAJE DE OJOS</h2>
-<
-<div class="row justify-content-center m-4">
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">ANASTASIA</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/anastacia.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+    <body style="background-color:black;">
+        <img src="~/Content/img/2Brochas.jpg" width="100%" height="300" />
+        <hr class="divider my-4" />
+       <h1 class="text-center text-white" style="background-color:black; font-family:sans-serif;">MAQUILLAJE DE OJOS</h1>
+        <div class="row justify-content-center m-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
                     </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal10">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal10" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">ANASTASIA</h4>
+                    <div class="card-body">
+                        <h4 class="text-center">ANASTASIA</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/anastacia.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
                             </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">Crea unas cejas más rellenas y definidas suavemente.</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/anastacia.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal10">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal10" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">ANASTASIA</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Crea unas cejas más rellenas y definidas suavemente.</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/anastacia.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">BROWDRAMA</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/brow.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal11">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal11" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">BROWDRAMA</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¿Cejas rebeldes? Ahora, controlar tus cejas es más fácil que nunca. Esta mascara para cejas esculpe y rellena en un simple paso.</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/brow.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">BROW DEFINE + FILL DUO</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/covergirl.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal12">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal12" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">BROW DEFINE + FILL DUO</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Prepárate para impresionar con unas cejas más rellenas, suaves e impecables</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/covergirl.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">BROWDRAMA</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/brow.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+        <div class="row justify-content-center m-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
                     </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal11">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal11" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">BROWDRAMA</h4>
+                    <div class="card-body">
+                        <h4 class="text-center">EASY BREEZY BROW</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/cover.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
                             </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">¿Cejas rebeldes? Ahora, controlar tus cejas es más fácil que nunca. Esta mascara para cejas esculpe y rellena en un simple paso.</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/brow.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal13">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal13" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">EASY BREEZY BROW</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¡Logra unas cejas de impacto que duran hasta por 2 dias! Gel para cejas que rellena y da color a tus cejas</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/cover.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">SCULPTING EYEBROW</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/milani.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal14">Conoce Más</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal14" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">SCULPTING EYEBROW </h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¿Cejas rebeldes? Ahora, controlar tus cejas es más fácil que nunca. Esta mascara para cejas esculpe y rellena en un simple paso.</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/milani.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">PARADISE POMADE</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/paradise.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal15">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal15" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">PARADISE POMADE </h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¡Ahora las cejas perfectas se consiguen fácilmente! Da forma y define las cejas!</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/paradise.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">BROW DEFINE + FILL DUO</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/covergirl.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+        <div class="row justify-content-center m-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
                     </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal12">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal12" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">BROW DEFINE + FILL DUO</h4>
+                    <div class="card-body">
+                        <h4 class="text-center">BROW POMADE POT</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/sombras.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
                             </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">Prepárate para impresionar con unas cejas más rellenas, suaves e impecables</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/covergirl.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal16">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal16" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">BROW POMADE POT</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¡Ahora las cejas perfectas se consiguen fácilmente! Da forma y define las cejas con una precisión impecable.</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/sombras.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">TINTED SACE LADY</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/tinta.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal17">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal17" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">TINTED SACE LADY</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¡Logra unas cejas de impacto que duran hasta por 2 dias con Tattoo Studio Brow Gel! Gel para cejas que rellena y da color a tus cejas</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/tinta.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">BEAUTY BOSS</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/sombra.jpg" alt="" height="450">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal18">Conoce Más</button>                <!-- Modal -->
+                        <div class="modal fade" id="myModal18" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">BEAUTY BOSS</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¡Define tus cejas en 3 simples pasos: Delinea , Rellena y Difumina! Su fórmula de larga duración se adapta al tono natural de la ceja para un acabado natural</h3>
+                                    <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/sombra.jpg" alt="">
+                                    <hr class="divider my-4" />
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <hr class="divider my-4" />
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                        <hr class="divider my-4" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-
-
-<div class="row justify-content-center m-4">
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">EASY BREEZY BROW</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/cover.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal13">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal13" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">EASY BREEZY BROW</h4>
-                            </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Logra unas cejas de impacto que duran hasta por 2 dias! Gel para cejas que rellena y da color a tus cejas</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/cover.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">SCULPTING EYEBROW</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/milani.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal14">Conoce Más</button>
-                <!-- Modal -->
-                <div class="modal fade" id="myModal14" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">SCULPTING EYEBROW </h4>
-                            </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">¿Cejas rebeldes? Ahora, controlar tus cejas es más fácil que nunca. Esta mascara para cejas esculpe y rellena en un simple paso.</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/milani.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">PARADISE POMADE</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/paradise.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal15">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal15" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">PARADISE POMADE </h4>
-                            </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Ahora las cejas perfectas se consiguen fácilmente! Da forma y define las cejas!</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/paradise.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="row justify-content-center m-4">
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">BROW POMADE POT</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/sombras.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal16">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal16" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">BROW POMADE POT</h4>
-                            </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Ahora las cejas perfectas se consiguen fácilmente! Da forma y define las cejas con una precisión impecable.</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/sombras.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">TINTED SACE LADY</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/tinta.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div>
-                }
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal17">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal17" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">TINTED SACE LADY</h4>
-                            </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Logra unas cejas de impacto que duran hasta por 2 dias con Tattoo Studio Brow Gel! Gel para cejas que rellena y da color a tus cejas</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/tinta.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <h4 class="text-center">BEAUTY BOSS</h4>
-                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/sombra.jpg" alt="" height="450">
-            </div>
-            <div class="row justify-content-center">
-                <!-- Trigger the modal with a button -->
-                @if (User.IsInRole("Client"))
-                {
-                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5">
-                        <label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                    </div>
-                }
-
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal18">Conoce Más</button>                <!-- Modal -->
-                <div class="modal fade" id="myModal18" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-center">BEAUTY BOSS</h4>
-                            </div>
-                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Define tus cejas en 3 simples pasos: Delinea , Rellena y Difumina! Su fórmula de larga duración se adapta al tono natural de la ceja para un acabado natural</h3>
-                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeOjos/sombra.jpg" alt="">
-                            <hr class="divider my-4" />
-                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
-                            <div class="modal-body">
-                                <img class="d-block w-100" src="~/Content/img/MaquillajeOjos/CEJASCOLOR.png" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <hr class="divider my-4" />
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
-                                <hr class="divider my-4" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    </body>

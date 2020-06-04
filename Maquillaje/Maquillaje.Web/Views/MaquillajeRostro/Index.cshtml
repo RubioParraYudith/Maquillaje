@@ -2,95 +2,517 @@
 @{
     ViewBag.Title = "Index";
 }
+    <body style="background-color:black;">
+        <img src="~/Content/img/mac.jpg" width="100%" height="300" />
 
-<img src="~/Content/img/mac.jpg" width="100%" height="300" />
+        <h1 class="text-center text-white" style="background-color:black; font-family:sans-serif;">MAQUILLAJE DE ROSTRO</h1>
+        <hr class="divider my-4" />
 
-<h2 class="text-center text-white bg-dark">MAQUILLAJE DE ROSTRO</h2>
-<
-<div class="row justify-content-center m-4">
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
+        <div class="row justify-content-center m-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">FIT ME BASE</h4>
+                        <img class="d-block w-100" src="~/Content/img/basclinique.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal20">Conoce Más</button>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal20" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">FIT ME BASE</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Iguala tu tono y textura de piel. Piel Mate y sin poros. 9 DE CADA 10 ENCONTRARON SU TONO . 95 % LA RECOMIENDA.</h3>
+                                    <img class="d-block w-100" src="~/Content/img/basclinique.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/basclinique.jpg" alt="" height="300">
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">DIOR BACKSTAGE</h4>
+
+                        <img class="d-block w-100" src="~/Content/img/basedior.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal21">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal21" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">DIOR BACKSTAGE</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Base de maquillaje para pieles mixtas a grasas.</h3>
+                                    <img class="d-block w-100" src="~/Content/img/basedior.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">BORN TO GLOW</h4>
+
+                        <img class="d-block w-100" src="~/Content/img/basenyx.jpeg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal22">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal22" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">BORN TO GLOW</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¡Experimenta el superpoder del maquillaje! Esta base hiperpigmentada te brinda una cobertura total transformadora que dura hasta 24 horas.</h3>
+                                    <img class="d-block w-100" src="~/Content/img/basenyx.jpeg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
+
+
+
+        <div class="row justify-content-center m-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">INFALIBLE</h4>
+
+                        <img class="d-block w-100" src="~/Content/img/polvoloreal.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal23">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal23" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">INFALIBLE</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Es una fórmula a base de minerales diseñada para ayudar a controlar el brillo y suavizar la textura de la piel con un toque de color</h3>
+                                    <img class="d-block w-100" src="~/Content/img/polvoloreal.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <<div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/basedior.jpg" alt="" height="300">
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">CHANEL</h4>
+
+                        <img class="d-block w-100" src="~/Content/img/chanel.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal24">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal24" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">CHANEL</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">¡Logra un look radiante y bronceado con nuestro nuevo Polvo Bronceador Fit me! ¡Ideal para crear un contour sutil!</h3>
+                                    <img class="d-block w-100" src="~/Content/img/chanel.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">BASE FOREVER</h4>
+
+                        <img class="d-block w-100" src="~/Content/img/base forever.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal25">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal25" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">BASE FOREVER</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Intensifica tu look con un brillo metálico cálido. Este iluminador tiene pigmentos que reflejan la luz para lograr un efecto cromado cautivador.</h3>
+                                    <img class="d-block w-100" src="~/Content/img/base forever.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
+
+
+
+        <div class="row justify-content-center m-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">INFALLIBLE</h4>
+
+                        <img class="d-block w-100" src="~/Content/img/infalibre.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal26">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal26" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">INFALLIBLE</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Base luminosa con FPS 18. Hidrata y suaviza la textura de la piel. Acabado naturalmente luminoso.</h3>
+                                    <img class="d-block w-100" src="~/Content/img/infalibre.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/basenyx.jpeg" alt="" height="300">
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">CLINIQUE</h4>
+
+                        <img class="d-block w-100" src="~/Content/img/polvoclinique.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal27">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal27" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">CLINIQUE</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Iguala tu tono y textura de piel. Piel Mate y sin poros. 9 DE CADA 10 ENCONTRARON SU TONO . 95 % LA RECOMIENDA.</h3>
+                                    <img class="d-block w-100" src="~/Content/img/polvoclinique.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                        <hr class="divider my-4" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-center">DIOR</h4>
+                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/carrito.jpg" alt="" height="300">
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- Trigger the modal with a button -->
+                        @if (User.IsInRole("Client"))
+                        {
+                            <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                            <div class="rating">
+                                <input type="radio" name="rating" value="5" id="5">
+                                <label for="5">☆</label>
+                                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
+                        }
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal29">Conoce Más</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mod" id="myModal29" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content mod" width="200">
+                                    <div class="modal-body">
+                                        <h4 class="modal-title text-center">DIOR</h4>
+                                    </div>
+                                    <h3 class="text-justify" style="font-family:'Agency FB'">Iguala tu tono y textura de piel. Piel Mate y sin poros. 9 DE CADA 10 ENCONTRARON SU TONO . 95 % LA RECOMIENDA.</h3>
+                                    <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/carrito.jpg" alt="">
+
+                                    <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                                    <hr class="divider my-4" />
+                                    <div class="modal-body">
+                                        <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/COLORESROSTRO.png" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-lg btn-block" style="background-color:coral;" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="row justify-content-center m-4">
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/polvoloreal.jpg" alt="" height="300">
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/chanel.jpg" alt="" height="300">
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/base forever.jpg" alt="" height="300">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row justify-content-center m-4">
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/infalibre.jpg" alt="" height="300">
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/polvoclinique.jpg" alt="" height="300">
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-header bg-danger">
-            </div>
-            <div class="card-body">
-                <img class="d-block w-100" src="~/Content/img/MaquijalleRostro/carrito.jpg" alt="" height="300">
-            </div>
-        </div>
-    </div>
-</div>
+
+    </body>

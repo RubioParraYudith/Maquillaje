@@ -275,8 +275,6 @@
     <Content Include="Content\img\MaquillajeOjos\sombras.jpg" />
     <Content Include="Content\img\MaquillajeOjos\tinta.jpg" />
     <Content Include="Content\img\mascarilla.jpg" />
-    <Content Include="Content\img\mifotoY.jpg" />
-    <Content Include="Content\img\mifotoyy.png" />
     <Content Include="Content\img\MX-maquillaje-arte-725x375.jpg" />
     <Content Include="Content\img\ojos.jpg" />
     <Content Include="Content\img\pepino.jpg" />
@@ -292,7 +290,7 @@
     <Content Include="Content\img\t.png" />
     <Content Include="Content\img\viento.jpg" />
     <Content Include="Content\img\w.png" />
-    <Content Include="Content\img\yoY.png" />
+    <Content Include="Content\img\Yudith.jpg" />
     <Content Include="Content\mifotoY.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -457,11 +455,6 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
-    <Content Include="Views\Clients\Index.cshtml" />
-    <Content Include="Views\Clients\Create.cshtml" />
-    <Content Include="Views\Clients\Delete.cshtml" />
-    <Content Include="Views\Clients\Details.cshtml" />
-    <Content Include="Views\Clients\Edit.cshtml" />
     <Content Include="Views\Home\Consejos.cshtml" />
     <Content Include="Views\MaquillajeOjos\Index.cshtml" />
     <Content Include="Views\MaquillajeLabios\Index.cshtml" />
@@ -469,6 +462,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Clients\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
