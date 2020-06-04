@@ -2,7 +2,6 @@
 @{
     ViewBag.Title = "Index";
 }
-
 <img src="~/Content/img/MaquillajeLabiales/labial.jpg" width="100%" height="300" />
 
 <h2 class="text-center bg-danger text-white">MAQUILLAJE DE LABIOS</h2>
@@ -11,85 +10,474 @@
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
+                
             </div>
             <div class="card-body">
+                <h4 class="text-center">BABY LIPS</h4>
+                <hr class="divider my-4" />
+
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/BABY LIPS® MOISTURIZING LIP BALM.jpg" alt="">
             </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Conoce Más</button>
+
+                <!-- Modal -->
+                <div class="modal fade mod" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content mod" width="200">
+                            <div class="modal-body">
+                                <h4 class="modal-title text-center">BABY LIPS MOISTURIZING LIP BALM</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Olvídate de los bálsamos labiales básicos! Renovación intensa + ocho horas de hidratación.</h3>
+                            <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/BABY LIPS® MOISTURIZING LIP BALM.jpg" alt="">
+
+                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                            <hr class="divider my-4" />
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                                <hr class="divider my-4" />
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+
+
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">ELECTRIC SHINE</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/electric shine.png" alt="">
             </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Conoce Más</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">ELECTRIC SHINE</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">Labial Líquido efecto prismático</h3>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/electric shine.png" alt="">
+                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">GLITTER FIX</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/glitter lip fix.png" alt="">
             </div>
-        </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Conoce Más</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal3" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">GLITTER FIX</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">Labial Líquido efecto brilloso Glitter Fix</h3>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/glitter lip fix.png" alt="">
+                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
     </div>
 </div>
+
+
 <div class="row justify-content-center m-4">
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">SUPERSTAY MATTE INK CITY</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/SUPERSTAY MATTE INK CITY.jpg" alt="">
             </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Conoce Más</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal4" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">SUPERSTAY MATTE INK CITY</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">Nueva colección de Matte ink "City Edition" Descubre los nuevos tonos inspirados en la Ciudad De New York ¡Hasta 16 horas de un acabado mate líquido intenso!</h3>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/SUPERSTAY MATTE INK CITY.jpg" alt="">
+                            <hr class="divider my-4" />
+                            <p class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</p>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">CS MATTE METAL COUNTDOWN</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/CS MATTE METAL COUNTDOWN.jpg" alt="">
             </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Conoce Más</button>                <!-- Modal -->
+                <div class="modal fade" id="myModal5" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">CS MATTE METAL COUNTDOWN</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">Luce los tonos de la colección countdown te dejaran unos labios deslumbrantes, para lograr un look metálico llamativo.</h3>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/CS MATTE METAL COUNTDOWN.jpg" alt="">
+                            <hr class="divider my-4" />
+                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">SUPERSTAY MATTE INK LIQUID LIPSTICK</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/Labial Mate Superstay.jpg" alt="">
             </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">Conoce Más</button>                <!-- Modal -->
+                <div class="modal fade" id="myModal6" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">SUPERSTAY MATTE INK LIQUID LIPSTICK</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Nude de am a pm!. Nuevos tonos de nuestro labial revolucionario ¡Hasta 16 horas de un acabado mate líquido intenso que no se transfiere!</h3>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/SUPERSTAY 24® LIQUID LIPSTICK.jpg" alt="">
+                            <hr class="divider my-4" />
+                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+       
     </div>
 </div>
+
+
 <div class="row justify-content-center m-4">
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">MATTE METALLICS LIPSTICK</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/MATTE METALLICS LIPSTICK.jpg" alt="">
             </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">Conoce Más</button>                <!-- Modal -->
+                <div class="modal fade" id="myModal7" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">MATTE METALLICS LIPSTICK</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">Los tonos mates metálicos llegaron para quedarse. Estos tonos metálicos tienen una textura pulida sofisticada para brindarte el look de labios más lujoso y sensacional.</h3>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/MATTE METALLICS LIPSTICK.jpg" alt="">
+                            <hr class="divider my-4" />
+                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">METALLIC FOIL LIPSTICK</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/METALLIC FOIL.jpg" alt="">
             </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">Conoce Más</button>                <!-- Modal -->
+                <div class="modal fade" id="myModal8" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">METALLIC FOIL</h4>
+                            </div>
+                            <h2 class="text-justify" style="font-family:'Agency FB'">Estos tonos metálicos tienen una textura pulida sofisticada para brindarte el look de labios más lujoso y sensacional.</h2>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/METALLIC FOIL.jpg" alt="">
+                            <hr class="divider my-4" />
+                            <h3 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h3>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
     <div class="col-md-3">
         <div class="card mb-4">
             <div class="card-header bg-danger">
             </div>
             <div class="card-body">
+                <h4 class="text-center">SUPERSTAY 24 LIQUID LIPSTICK</h4>
+                <hr class="divider my-4" />
                 <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/SUPERSTAY 24® LIQUID LIPSTICK.jpg" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <!-- Trigger the modal with a button -->
+                @if (User.IsInRole("Client"))
+                {
+                    <h3 class="text-center " style="font-family:Georgia, 'Times New Roman', Times, serif">Califica el producto</h3>
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                }
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal9">Conoce Más</button>                <!-- Modal -->
+                <div class="modal fade" id="myModal9" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">SUPERSTAY 24 LIQUID LIPSTICK</h4>
+                            </div>
+                            <h3 class="text-justify" style="font-family:'Agency FB'">¡Pon a prueba nuestro labiales superstay 24! No te decepcionará. Siempre luce y se siente como recién aplicado incluso después de 300 bocados de tu cupcake favorito, 120 sorbos de café e incontables besos.</h3>
+                            <img class="d-block w-100" width="200" height="500" src="~/Content/img/MaquillajeLabiales/BABY LIPS® MOISTURIZING LIP BALM.jpg" alt="">
+                            <hr class="divider my-4" />
+                            <h2 class="text-center" style="font-family:'Agency FB'">¡PRUÉBATELO!</h2>
+                            <div class="modal-body">
+                                <img class="d-block w-100" src="~/Content/img/MaquillajeLabiales/coloresslabial.png" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <hr class="divider my-4" />
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+                                <hr class="divider my-4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

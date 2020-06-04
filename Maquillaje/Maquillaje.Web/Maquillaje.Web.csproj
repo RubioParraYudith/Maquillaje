@@ -249,9 +249,11 @@
     <Content Include="Content\img\mac.jpg" />
     <Content Include="Content\img\makeup.jpg" />
     <Content Include="Content\img\MaquijalleRostro\carrito.JPG" />
+    <Content Include="Content\img\MaquijalleRostro\COLORESROSTRO.png" />
     <Content Include="Content\img\MaquillajeLabiales\BABY LIPS® MOISTURIZING LIP BALM.jpg" />
     <Content Include="Content\img\MaquillajeLabiales\COLOR SENSATINAL SMOKED ROSES.jpg" />
     <Content Include="Content\img\MaquillajeLabiales\COLOR SENSATIONAL® THE LOADED BOLDS LIPSTICK.jpg" />
+    <Content Include="Content\img\MaquillajeLabiales\coloresslabial.png" />
     <Content Include="Content\img\MaquillajeLabiales\CS MATTE METAL COUNTDOWN.jpg" />
     <Content Include="Content\img\MaquillajeLabiales\electric shine.png" />
     <Content Include="Content\img\MaquillajeLabiales\glitter lip fix.png" />
@@ -263,6 +265,7 @@
     <Content Include="Content\img\MaquillajeLabiales\SUPERSTAY MATTE INK CITY.jpg" />
     <Content Include="Content\img\MaquillajeOjos\anastacia.jpg" />
     <Content Include="Content\img\MaquillajeOjos\brow.jpg" />
+    <Content Include="Content\img\MaquillajeOjos\CEJASCOLOR.png" />
     <Content Include="Content\img\MaquillajeOjos\cover.jpg" />
     <Content Include="Content\img\MaquillajeOjos\covergirl.jpg" />
     <Content Include="Content\img\MaquillajeOjos\lapiz.jpg" />
@@ -272,6 +275,8 @@
     <Content Include="Content\img\MaquillajeOjos\sombras.jpg" />
     <Content Include="Content\img\MaquillajeOjos\tinta.jpg" />
     <Content Include="Content\img\mascarilla.jpg" />
+    <Content Include="Content\img\mifotoY.jpg" />
+    <Content Include="Content\img\mifotoyy.png" />
     <Content Include="Content\img\MX-maquillaje-arte-725x375.jpg" />
     <Content Include="Content\img\ojos.jpg" />
     <Content Include="Content\img\pepino.jpg" />
@@ -287,6 +292,8 @@
     <Content Include="Content\img\t.png" />
     <Content Include="Content\img\viento.jpg" />
     <Content Include="Content\img\w.png" />
+    <Content Include="Content\img\yoY.png" />
+    <Content Include="Content\mifotoY.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
