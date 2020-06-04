@@ -28,7 +28,7 @@
                     <a class="nav-link text-white" href="@Url.Action("Index", "MaquillajeLabios")">MAQUILLAJE PARA LABIOS</a>
                 </li>
                 <li class="nav-item px-lg-4">
-                    <a class="nav-link text-white" href="@Url.Action("Index", "MaquillajeRostro")">MAQUILLAJE PARA ROSTROS</a>
+                    <a class="nav-link text-white" href="@Url.Action("Index", "MaquillajeRostro")">MAQUILLAJE PARA ROSTRO</a>
                 </li>
                 @Html.Partial("_LoginPartial")
 
@@ -77,34 +77,43 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-white" href="@Url.Action("Contact", "Home")">CONTACTO</a>
-                </li>
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-white" href="@Url.Action("About", "Home")">NOSOTROS</a>
-                </li>
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-white" href="@Url.Action("Consejos","Home")">CONSEJOS</a>
-                </li>
 
-            </ul>
+            <div style="margin-left:335px">
+                
+                <a href="@Url.Action("Contact", "Home")">
+                    <div class="chip m-3 text-dark">
+                        <img src="~/Content/img/ojos.jpg" alt="Person" width="96" height="96">
+                        CONTACTO
+                    </div>
+                </a>
+                <a href="@Url.Action("About", "Home")">
+                    <div class="chip m-3 text-dark">
+                        <img src="~/Content/img/labios.jpg" alt="Person" width="96" height="96">
+                        NOSOTROS
+                    </div>
+                </a>
+                <a href="@Url.Action("Consejos", "Home")">
+                    <div class="chip m-3 text-dark">
+                        <img src="~/Content/img/icono.jpg" alt="Person" width="96" height="96">
+                        TIPS BELLEZA
+                    </div>
+                </a>
+                </div>
+       </div>
 
-        </div>
-
-    </nav>
+            </nav>
 
 
 
     <div class="bg-danger">
         <section class="copyright bg-danger py-2 text-center text-white ">
-            <p class="text-center mb-5">
+            <p class="text-center mb-5" style="margin-left:190px">
                 Copyright&copy; @DateTime.Now.Year -Maquillaje- Proyecto Final 2020
 
-                <a class="float-right" href="https://www.facebook.com"><img src="~/Content/img/f.png" alt="facebook" width="30" height="30"></a>
-                <a class="float-right" href="https://www.twitter.com"><img src="~/Content/img/t.png" alt="twitter" width="30" height="30"></a>
-                <a class="float-right" href="https://www.web.whatsapp.com"><img src="~/Content/img/w.png" alt="whatsapp" width="30" height="30"></a>
-                <a class="float-right" href="https://www.whatsapp.com"><img src="~/Content/img/i.png" alt="instagram" width="30" height="30"></a>
+                <a class="float-right m-1" href="https://www.facebook.com"><img src="~/Content/img/f.png" alt="facebook" width="35" height="35"></a>
+                <a class="float-right m-1" href="https://www.twitter.com"><img src="~/Content/img/t.png" alt="twitter" width="30" height="30"></a>
+                <a class="float-right m-1" href="https://www.web.whatsapp.com"><img src="~/Content/img/w.png" alt="whatsapp" width="30" height="30"></a>
+                <a class="float-right m-1" href="https://www.whatsapp.com"><img src="~/Content/img/i.png" alt="instagram" width="30" height="30"></a>
             </p>
         </section>
     </div>
