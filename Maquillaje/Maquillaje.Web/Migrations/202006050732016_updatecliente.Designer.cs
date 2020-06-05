@@ -7,13 +7,13 @@ namespace Maquillaje.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class UpdateModels : IMigrationMetadata
+    public sealed partial class updatecliente : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateModels));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updatecliente));
         
         string IMigrationMetadata.Id
         {
-            get { return "202006012326269_UpdateModels"; }
+            get { return "202006050732016_updatecliente"; }
         }
         
         string IMigrationMetadata.Source

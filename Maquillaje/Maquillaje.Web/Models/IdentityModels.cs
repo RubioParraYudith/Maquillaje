@@ -12,7 +12,6 @@ namespace Maquillaje.Web.Models
     public class ApplicationUser : IdentityUser
 
     {
-
         [Display(Name = "Nombre")]
         [MaxLength(50)]
         public string FirstName { get; set; }
@@ -24,9 +23,6 @@ namespace Maquillaje.Web.Models
         [MaxLength(400)]
 
         public string Address { get; set; }
-        [Display(Name = "Picture")]
-
-        public string imgurl { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Tenga en cuenta que el valor de authenticationType debe coincidir con el definido en CookieAuthenticationOptions.AuthenticationType

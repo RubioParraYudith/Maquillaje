@@ -4,58 +4,103 @@
     ViewBag.Title = "Index";
 }
 
-<p>
-    <h2 class="text-center text-body">LISTA DE NUESTROS PROVEEDORES</h2>
-    <a href="@Url.Action("Create","Suppliers")" class="btn btn-primary btn-lg btn-icon-split m-3">
-        <span class="icon text-white-50"><i class="fas fa-plus"></i></span>
-        <span class="text">Agregar proveedor</span>
-    </a>
-</p>
-<table class="table table-sm" id="mySuppliers">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.SupplierCode)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SupplierName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Phone)
-        </th>
-        <th></th>
-    </tr>
+<div class="row justify-content-center m-3">
+    <h4 class="m-0 text-dark"> LISTADO DE PROVEEDORES</h4>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SupplierCode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SupplierName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
-    }
-</table>
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-    <script>
-    $(document).ready(function () {
-        $('#mySuppliers').DataTable();
-    });
-    </script>
-}
+</div>
+<div id="Principal">
+    <p class="m-4">
+        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <span class="icon btn-icon-split text-white-50"><i class="fas fa-plus"></i></span>
+            <span class="text">Agregar proveedor</span>
+        </a>
+    </p>
+    <div id="ContenedorDeMascotas">
+        <div class="row justify-content-center m-3">
+            @foreach (var item in Model)
+            {
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <a href="@Url.Action("Details","Suppliers", new { id = item.Id })">
+
+                        <div class="card border-left-primary shadow h-100 py-2 bg-dark">
+                            <div class="card-body bg-primary">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs  text-white text-uppercase mb-1">@item.SupplierCode</div>
+                                        <div class="h5 mb-0 font-weight-bold text-white">@item.SupplierName</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-briefcase fa-2x text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            }
+
+
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-title bg-danger">
+                <h6 class="text-center text-white">Nuevo Proveedor</h6>
+            </div>
+            <div class="modal-body">
+                <form action="@Url.Action("Create","Suppliers")" method="post" new { enctype="multipart/form-data" }>
+                    @Html.AntiForgeryToken()
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-6">Codigo de proveedor</label>
+                                <div class="col-md-10">
+                                    <input type="number" name="SupplierCode" value="" placeholder="Código" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-6">Nombre</label>
+                                <div class="col-md-10">
+                                    <input type="text" name="SupplierName" value="" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-2">Correo Electrónico</label>
+                                <div class="col-md-10">
+                                    <input type="text" name="Email" value="" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-6">Teléfono</label>
+                                <div class="col-md-10">
+                                    <input type="text" name="Phone" value="" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" class="btn btn-info" value="Crear" />
+                            <a href="@Url.Action("Index", "Home")" class="btn btn btn-danger">Regresar</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

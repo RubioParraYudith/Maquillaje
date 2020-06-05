@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="~/Content/img/icono.png" />
-    <title>@ViewBag.Title MAKE UP</title>
+    <title> MAKE UP</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -39,7 +40,6 @@
                             <i class="fas fa-user"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="nav-link text-body" href="@Url.Action("Index", "Users")">USUARIOS</a>
                             <a class="nav-link text-body" href="@Url.Action("Index", "Products")">PRODUCTOS</a>
                             <a class="nav-link text-body" href="@Url.Action("Index", "Suppliers")">PROVEEDORES</a>
                             <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
@@ -56,7 +56,6 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="nav-link text-body" href="@Url.Action("Index","Home")">INICIO</a>
-                            <a class="nav-link text-body" href="@Url.Action("Edit","Clients")">USUARIO</a>
                             <a class="nav-link text-body" href="@Url.Action("Index", "Manage")">CAMBIAR CONTRASEÑA</a>
                         </div>
                     </li>
@@ -105,16 +104,16 @@
                     </div>
                 </a>
             </div>
-       </div>
+        </div>
 
-            </nav>
+    </nav>
 
 
 
     <div class="bg-danger">
-        <section class="copyright py-2 text-center text-white " style="background-color:maroon;" >
+        <section class="copyright py-2 text-center text-white " style="background-color:maroon;">
             <p class="text-center mb-5" style="margin-left:190px">
-                Copyright&copy; @DateTime.Now.Year -Maquillaje- Proyecto Final 
+                Copyright&copy; @DateTime.Now.Year - Abrego Morales-Rubio Parra -  Proyecto Final
 
                 <a class="float-right m-1" href="https://www.facebook.com"><img src="~/Content/img/f.png" alt="facebook" width="35" height="35"></a>
                 <a class="float-right m-1" href="https://www.twitter.com"><img src="~/Content/img/t.png" alt="twitter" width="30" height="30"></a>
@@ -127,5 +126,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
 </body>
 </html>

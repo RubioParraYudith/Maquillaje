@@ -39,7 +39,7 @@ namespace Maquillaje.Web.Controllers
         // GET: Products/Create
         public ActionResult Create()
         {
-            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierCode");
+            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierName");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace Maquillaje.Web.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierCode", product.SupplirId);
+            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierName", product.SupplirId);
             return View(product);
         }
 
@@ -73,7 +73,7 @@ namespace Maquillaje.Web.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierCode", product.SupplirId);
+            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierName", product.SupplirId);
             return View(product);
         }
 
@@ -90,7 +90,7 @@ namespace Maquillaje.Web.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierCode", product.SupplirId);
+            ViewBag.SupplirId = new SelectList(db.Suppliers, "Id", "SupplierName", product.SupplirId);
             return View(product);
         }
 

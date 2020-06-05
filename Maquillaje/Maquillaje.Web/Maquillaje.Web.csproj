@@ -171,6 +171,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Clase\utilities.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MaquillajeLabiosController.cs" />
@@ -190,9 +191,13 @@
     <Compile Include="Migrations\202006010901002_FirstMigration.Designer.cs">
       <DependentUpon>202006010901002_FirstMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202006012326269_UpdateModels.cs" />
-    <Compile Include="Migrations\202006012326269_UpdateModels.Designer.cs">
-      <DependentUpon>202006012326269_UpdateModels.cs</DependentUpon>
+    <Compile Include="Migrations\202006050728383_UpdateSupplier.cs" />
+    <Compile Include="Migrations\202006050728383_UpdateSupplier.Designer.cs">
+      <DependentUpon>202006050728383_UpdateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006050732016_updatecliente.cs" />
+    <Compile Include="Migrations\202006050732016_updatecliente.Designer.cs">
+      <DependentUpon>202006050732016_updatecliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -464,7 +469,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Clients\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -490,8 +494,11 @@
     <EmbeddedResource Include="Migrations\202006010901002_FirstMigration.resx">
       <DependentUpon>202006010901002_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006012326269_UpdateModels.resx">
-      <DependentUpon>202006012326269_UpdateModels.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202006050728383_UpdateSupplier.resx">
+      <DependentUpon>202006050728383_UpdateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006050732016_updatecliente.resx">
+      <DependentUpon>202006050732016_updatecliente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

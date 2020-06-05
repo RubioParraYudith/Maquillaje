@@ -10,8 +10,7 @@ namespace Maquillaje.Web.Models
     public class Product
     {
         public int Id { get; set; }
-        [Display(Name = "Codigo")]
-    
+        [Display(Name = "Codigo")]  
 
         public string ProductCode { get; set; }
         [Display(Name = "Nombre")]
@@ -31,6 +30,6 @@ namespace Maquillaje.Web.Models
 
         public Supplier Supplier { get; set; }
 
-
+        public ICollection<Supplier> Suppliers { get; set; }
     }
 }
