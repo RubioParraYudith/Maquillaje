@@ -1,63 +1,72 @@
-﻿<div style="background-color:bisque; color:white">
-    <div class="row justify-content-between">
-        <div class="col-md-5.5" style="margin-top:10px;">
-            <div class="column">
-                <div class="container justify-content-center">
-                    <table style="margin-left:150px" class="text-white">
-                        <form action="mailto:perla.abrego17@tectijuana.edu.mx" target="_blank">
+﻿<title>Formulario de Contacto con Bootstrap y PHP</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-                            <p class="text-dark shadow">
+<body class="" style="background-color:black;">
+    <h3 class="text-center text-white" style="background-color:black;">GRACIAS POR UNIRTE, REALIZA LA ENCUESTA A BASE DE TU EXPERIENCIA</h3>
 
-                                1.- SELECCIONE SU MARCA FAVORITA DE MAQUILLAJE:<br>
+    <div style="background-color:bisque; color:white">
+        <div class="row justify-content-between">
+            <div class="col-md-5.5" style="margin-top:10px;">
+                <div class="column">
+                    <div class="container justify-content-center">
+                        <table style="margin-left:150px" class="text-white">
+                            <form action="mailto:perla.abrego17@tectijuana.edu.mx" method="post" enctype="text/plain">
 
-                                <input type="checkbox" name="peliculas"> CLINIQUE<br>
-                                <input type="checkbox" name="deportes"> DIOR<br>
-                                <input type="checkbox" name="videojuegos"> NYX<br>
-                                <input type="checkbox" name="videojuegos"> CHANEL<br>
-                                <input type="checkbox" name="videojuegos">OTRA<label></label>
+                                <p class="text-dark shadow">
 
-                            </p>
+                                    1.- SELECCIONE SU MARCA FAVORITA DE MAQUILLAJE:<br>
 
-                            <p class="text-dark shadow">
-                                2.- SELECCIONE QUE LE PARECE LA MARCA DE SU PRODUCTO FAVORITO:<br />
+                                    <input type="checkbox" name="peliculas"> CLINIQUE<br>
+                                    <input type="checkbox" name="deportes"> DIOR<br>
+                                    <input type="checkbox" name="videojuegos"> NYX<br>
+                                    <input type="checkbox" name="videojuegos"> CHANEL<br>
+                                    <input type="checkbox" name="videojuegos">OTRA<label></label>
 
-                                <input type="checkbox" name="videojuegos">EXCELENTE<br>
-                                <input type="checkbox" name="videojuegos">BUENO<br>
-                                <input type="checkbox" name="videojuegos"> REGULAR<br>
-                                <input type="checkbox" name="videojuegos"> MALO<br>
+                                </p>
 
-                            </p>
-                            <p class="text-dark shadow">
-                                3.- LO PRIMERO QUE TOMA EN CUENTA AL COMPRAR SU MAQUILLAJE ES: <br />
+                                <p class="text-dark shadow">
+                                    2.- SELECCIONE QUE LE PARECE LA MARCA DE SU PRODUCTO FAVORITO:<br />
 
-                                <input type="checkbox" name="videojuegos">PRECIO<br>
-                                <input type="checkbox" name="videojuegos">COBERTURA<br>
-                                <input type="checkbox" name="videojuegos">MARCA<br>
-                            </p>
+                                    <input type="checkbox" name="videojuegos">EXCELENTE<br>
+                                    <input type="checkbox" name="videojuegos">BUENO<br>
+                                    <input type="checkbox" name="videojuegos"> REGULAR<br>
+                                    <input type="checkbox" name="videojuegos"> MALO<br>
 
-                            <p class="text-dark shadow">
-                                4.- ¿EN DÓNDE ADQUIERE NORMALMENTE SU MAQUILLAJE?: <br />
+                                </p>
+                                <p class="text-dark shadow">
+                                    3.- LO PRIMERO QUE TOMA EN CUENTA AL COMPRAR SU MAQUILLAJE ES: <br />
 
-                                <input type="checkbox" name="videojuegos">EN LÍNEA<br>
-                                <input type="checkbox" name="videojuegos">EN TIENDA<br>
-                                <input type="checkbox" name="videojuegos">COMERCIANTES<br>
-                            </p>
+                                    <input type="checkbox" name="videojuegos">PRECIO<br>
+                                    <input type="checkbox" name="videojuegos">COBERTURA<br>
+                                    <input type="checkbox" name="videojuegos">MARCA<br>
+                                </p>
 
-                            <p><input class="btn btn-block btn-outline-danger" type="submit" value="Enviar información"></p>
+                                <p class="text-dark shadow">
+                                    4.- ¿EN DÓNDE ADQUIERE NORMALMENTE SU MAQUILLAJE?: <br />
 
-                        </form>
-                    </table>
+                                    <input type="checkbox" name="videojuegos">EN LÍNEA<br>
+                                    <input type="checkbox" name="videojuegos">EN TIENDA<br>
+                                    <input type="checkbox" name="videojuegos">COMERCIANTES<br>
+                                </p>
+
+                                <p><input class="btn btn-block btn-outline-danger" type="submit" value="Enviar información"></p>
+
+                            </form>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-md-3" style="margin-top:40px;">
+                    <div class="column">
+                        <div class="container justify-content-center">
+                            <img src="~/Content/img/brochas.jpg" width="500" height="500" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    <div class="row justify-content-between">
-        <div class="col-md-3" style="margin-top:40px;">
-            <div class="column">
-                <div class="container justify-content-center">
-                <img src="~/Content/img/brochas.jpg" width="500" height="520" />
-                    </div>
-            </div>
-            </div>
-        </div>
     </div>
-            </div>
+</body>
+

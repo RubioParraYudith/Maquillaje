@@ -15,6 +15,7 @@ namespace Maquillaje.Web.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Suppliers
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Suppliers.ToList());

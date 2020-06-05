@@ -15,6 +15,7 @@ namespace Maquillaje.Web.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Products
+        [Authorize]
         public ActionResult Index()
         {
             var products = db.Products.Include(p => p.Supplier);

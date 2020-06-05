@@ -91,12 +91,16 @@
                         NOSOTROS
                     </div>
                 </a>
-                <a href="@Url.Action("Consejos", "Home")">
-                    <div class="chip m-3 text-dark">
-                        <img src="~/Content/img/icono.jpg" alt="Person" width="96" height="96">
-                        TIPS BELLEZA
-                    </div>
-                </a>
+                @if (User.IsInRole("Client"))
+                {
+                    <a href="@Url.Action("Consejos", "Home")">
+                        <div class="chip m-3 text-dark">
+                            <img src="~/Content/img/icono.jpg" alt="Person" width="96" height="96">
+                            TIPS BELLEZA
+                        </div>
+                    </a>
+                }
+
                 <a href="@Url.Action("Reseñas", "Home")">
                     <div class="chip m-3 text-dark">
                         <img src="~/Content/img/reseña.png" alt="Person" width="96" height="96">
