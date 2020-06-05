@@ -30,5 +30,9 @@ namespace Maquillaje.Web.Controllers
         {
         return View();
         }
+        public ActionResult Reseñas()
+        {
+            return View();
+        }
     }
 }

@@ -285,6 +285,7 @@
     <Content Include="Content\img\polvomac.jpg" />
     <Content Include="Content\img\portada.jpg" />
     <Content Include="Content\img\portdior.jpg" />
+    <Content Include="Content\img\reseña.png" />
     <Content Include="Content\img\rosa.jpg" />
     <Content Include="Content\img\t.jpeg" />
     <Content Include="Content\img\t.png" />
@@ -459,6 +460,7 @@
     <Content Include="Views\MaquillajeOjos\Index.cshtml" />
     <Content Include="Views\MaquillajeLabios\Index.cshtml" />
     <Content Include="Views\MaquillajeRostro\Index.cshtml" />
+    <Content Include="Views\Home\Reseñas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
